@@ -1,0 +1,13 @@
+name: hello git test action
+
+on: push
+
+jobs:
+  test-actions-workflow:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout re[pository code
+        uses: actions/checkout@v4
+      - run: echo "$(cat hello_world.txt)"
